@@ -1,0 +1,267 @@
+* {
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.medsos {
+    padding:5px 0;
+    background-color: #07093A;
+}
+.medsos ul li {
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+}
+.container {
+    width:80%;
+    margin:0 auto;
+}
+.container:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+header h1 {
+    float: left;
+    padding:15px 0;
+    color:#07093A;
+}
+header ul {
+    float: right;
+}
+header ul li {
+    display: inline-block;
+}
+header ul li a {
+    padding:25px 20px;
+    display: inline-block;
+}
+header ul li a:hover {
+    background-color: #07093A;
+    color: #E1FA0B;
+}
+.active {
+    background-color: #07093A;
+    color: #E1FA0B;
+}
+.banner {
+    height: 60vh;
+    background-image: url('../img/banner1.jpg');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner:after {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(7, 9, 58, .6);
+}
+.banner h2 {
+    color :#E1FA0B;
+    padding: 20px 25px;
+    border: 3px solid #E1FA0B;
+    align-items: center;
+    z-index: 1;
+}
+section {
+    padding:50px 0;
+}
+section h3 {
+    text-align: center;
+    padding: 20px 0;
+    color: #07093A;
+    margin-bottom: 20px;
+}
+.about,
+.service {
+    padding-bottom: 100px;
+}
+.about p {
+    color: #07093A
+    word-spacing: 2px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.service {
+    background-color: #AAACE7;
+}
+.box {
+    color: #07093A;
+}
+.box:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.box .col-4 {
+    width:25%;
+    padding:20px;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+
+}
+.icon {
+    line-height: 50px;
+    font-size: 20px;
+    margin:0 auto;
+}
+.box .col-4 h4 {
+    margin:20px 0; 
+}
+footer {
+    padding: 30px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+.label {
+    background-color: #07093A;
+    color : #E1FA0B
+}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    header h1 {
+        text-align: center;
+        float: none;
+    }
+    header ul {
+        text-align: center;
+        float: none;
+    }
+    .box .col-4 {
+        width:100% ;
+        float: none ;
+        margin-bottom: 20px;
+    }
+}
+section {
+    text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #050d18;
+  }
+  
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+  }
+  
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item h5 {
+    font-size: 16px;
+    background: #e4edf9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #1f5297;
+  }
